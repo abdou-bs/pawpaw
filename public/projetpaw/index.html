@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Myrecipes</title>
+    <link rel="stylesheet" href="page1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+ 
+<header> 
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+
+    <a href="#" class="logo"><span>my</span>recipes</a>
+    <nav class="navbar">
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#home">home</a>
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#book">service</a>
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#menu">book</a>
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#clients">chefs</a>
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#contact">contact</a>
+
+        
+    </nav>
+    <div class="icons">
+        <i class="fas fa-search" id="search-btn"></i>
+        <i class="fas fa-user" id="login-btn"></i>
+        
+
+    </div>
+    <form class="search-bar-container" id="search-bar-container">
+        <input type="search" id="search-bar" placeholder="search for a recipe....">
+        <label for="search-bar" class="fas fa-search"></label>
+    </form>
+</header>
+
+<div class="login-form-container">
+
+   <i class="fas fa-times" id="form-close"></i>
+
+    <form action="">
+        <h3>login</h3>
+        <input type="email" class="box" placeholder="entre votre email">
+        <input type="password" class="box" placeholder="entre votre password">
+        <input type="submit" value="login now" class="btn">
+        <input type="checkbox" id="remember">
+        <label for="remember">remember me </label>
+        <p>forget your password?<a href="#">click here</a>
+        <p>don't have an account? <a href="#">registre now</a></p>
+    </form>
+    
+
+</div>
+
+<section class="home" id="home">
+    <div class="content">
+        <h3><span>my</span>recipes</h3>
+        <p>plan your recipe plan your life</p>
+        <a href="#book" class="btn">discover more</a>
+    </div>
+    <div class="controls">
+        <span class="vid-btn active" data-src="video/Download.mp4"></span>
+        <span class="vid-btn" data-src="video/Download (1).mp4"></span>
+        <span class="vid-btn" data-src="video/Download (2).mp4"></span>
+        <span class="vid-btn" data-src="video/Download (3).mp4"></span>
+
+    </div>
+    <div class="video-container">
+        <video src="video/Download.mp4" id="video-slider" loop autoplay muted></video>
+
+    </div>
+
+</section>
+
+<section class="book" id="book">
+    <div class="heading">
+        <h1><span>Our</span>Service</h1>
+    </div>
+    <div class="row">
+        <div class="image">
+            <img src="photo/bunte-backenikonenzusammensetzung-31940847.webp" alt="">
+        </div>
+        <div class="text" id="text">
+            <h3>Myrecipes</h3>
+            <p>Myrecipes is a recipe palification website that allows users to find, share, and create their own recipes. The website offers a variety of features that make it easy to search for recipes, connect with other cooking enthusiasts, and create your own recipes. </p>
+            <a href="read mor.html" class="btn">read more</a>
+            <a href="#menu" class="btn">use our service</a>
+        </div>
+    </div>
+</section>
+
+<section class=" menu" id="menu"> 
+   
+  <div class="titre">
+    <h1><span>OUR</span>Dishes</h1>
+  </div>
+<div class="contenu">
+    <div class="box" >
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+       <div class="image">
+          <img src="photo/Capture d'écran 2023-11-28 213633.png" alt="">
+        </div>
+        <div class="content">
+         <h3>Plat</h3>
+        </div>
+    </a>
+    </div>
+    <div class="box" >
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+        <div class="image">
+           <img src="photo/Capture d'écran 2023-11-28 213704.png" alt="">
+        </div> 
+        <div class="content">
+          <h3>Salade</h3>
+        </div>
+        </a>
+   </div>
+    <div class="box" >
+        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+        <div class="image"> 
+           <img src="photo/Capture d'écran 2023-11-28 213811.png" alt="">
+        </div> 
+        <div class="content">
+          <h3>Sandwitch</h3>
+        </div>
+        </a>
+    </div>
+</div>
+
+
+</section>
+
+<section class="menu-D" id="menu-D"> 
+  <div class="titre-D">  
+      <h1><span>Our</span>Dessert</h1>
+  </div>
+<div class="contenu-D">
+    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+   <div class="box-D" >
+       <div class="image-D">
+          <img src="photo/Capture d'écran 2023-12-08 151706.png" alt="">
+        </div>
+        <div class="content-D">
+         <h3>côté salé</h3>
+        </div>
+   </div>
+     </a>
+     <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+   <div class="box-D" >
+        <div class="image-D">
+           <img src="photo/Capture d'écran 2023-12-08 151645.png" alt="">
+        </div> 
+        <div class="content-D">
+          <h3>côté sucré</h3>
+        </div>
+   </div>
+     </a>
+</div>
+
+
+</section>
+
+
+<section class=" menu-B" id="menu-B"> 
+ <div class="titre-B">
+    <h1 ><span>Our</span>Drinks</h1>
+ </div>
+ <div class="contenu-B">
+    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+   <div class="box-B" >
+       <div class="image-B">
+          <img src="photo/Capture d'écran 2023-12-08 151427.png" alt="">
+        </div>
+        <div class="content-B">
+         <h3>Boisson</h3>
+        </div>
+   </div>
+    </a>
+    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/plat.php">
+    <div class="box-B" >
+        <div class="image-B">
+           <img src="photo/Capture d'écran 2023-12-08 151456.png" alt="">
+        </div> 
+        <div class="content-B">
+          <h3>Milk Shake</h3>
+        </div>
+   </div>
+    </a>
+ </div>
+</section>
+
+<section class="clients" id="clients" >
+  <div class="team">
+        <h1><span>Our</span> team</h1>
+  </div>
+  <div class="team-box">
+    <div class="profile">
+        <img src="photo/Chef9.jpg" alt="">
+        <div class="info">
+            <h2 class="name">Chef1</h2> 
+            <p class="bio">kjhygfdsdfmlkiuhygtfrdkjhgf</p>
+
+            <div class="team-icon">
+                <i class="fa-brands fa-Facebook"></i>
+                <i class="fa-brands fa-Instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="photo/Chef-in-Kitchen-1.jpeg" alt="">
+        <div class="info">
+            <h2 class="name">Chef1</h2>
+            <p class="bio">kjhygfdsdfmlkiuhygtfrdkjhgf</p>
+
+            <div class="team-icon">
+                <i class="fa-brands fa-Facebook"></i>
+                <i class="fa-brands fa-Instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="photo/78493865.webp" alt="">
+        <div class="info">
+            <h2 class="name">Chef1</h2>
+            <p class="bio">kjhygfdsdfmlkiuhygtfrdkjhgf</p>
+
+            <div class="team-icon">
+                <i class="fa-brands fa-Facebook"></i>
+                <i class="fa-brands fa-Instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                
+            </div>
+        </div>
+    </div>
+    <div class="profile">
+        <img src="photo/R (2).jpeg" alt="">
+        <div class="info">
+            <h2 class="name">Chef1</h2>
+            <p class="bio">kjhygfdsdfmlkiuhygtfrdkjhgf</p>
+
+            <div class="team-icon">
+                <i class="fa-brands fa-Facebook"></i>
+                <i class="fa-brands fa-Instagram"></i>
+                <i class="fa-brands fa-twitter"></i>
+                
+            </div>
+        </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="contact" id="contact">
+    <div class="box-container">
+        <div class="box">
+            <h3 class="h3">quick links</h3>
+            <a href="#home" class="a" id="aa">home</a>
+            <a href="#service" class="a"id="aa">service</a>
+            <a href="#book" class="a" id="aa">book</a>
+            <a href="#clients" class="a"id="aa">Chefs</a>
+            <a href="#contact" class="a"id="aa">contact</a>
+            <a href="#reviews" class="a"id="aa">reviews</a>
+        </div>
+
+        <div class="box">
+            <h3 class="h3">contact info</h3>
+            <a href="tel:+2137790832" class="a"><i class="fas fa-phone" id="i"></i> téléphone 1  </a>
+            <a href="tel:+21377430832" class="a"><i class="fas fa-phone"id="i"></i> téléphone 2  </a>
+            <a href="mailto:abderraoufbessaa@gamil.com" class="a"><i class="fas fa-envelope"id="i"></i> mail  </a>
+            <a href="https://maps.app.goo.gl/8BGoWSWQ4ku7hm3i7?g_st=it" class="a"><i class="fas fa-map"id="i"></i>position </a>
+            
+        </div>
+        <div class="box">
+            <h3 class="h3">follow us</h3>
+            <a href="http://www.facebook.com/profile.php?id=100011175072125&mibextid=LQQJ4d" class="a"><i class="fab fa-facebook-f"id="i"></i>facebook  </a>
+            <a href="https://twitter.com/AbdouRf213" class="a"><i class="fab fa-twitter"id="i"></i>twitter  </a>
+            <a href="http://https://www.instagram.com/abdou_rf_bs/" class="a"><i class="fab fa-instagram"id="i"></i>instagram  </a>
+            <a href="http://www.linkedin.com/in/abderraouf-bessaa-064370240" class="a"><i class="fab fa-linkedin"id="i"></i>linkedin  </a>
+        </div>
+        <div class="credit">created by <span class="span">mr.bessaa abderraouf and ms.cheurfa hanna sanna</span> | all rights reserved</div>
+    </div>
+ </section>
+
+
+
+    <script >let searchbtn = document.querySelector('#search-btn');
+        let searchbar = document.querySelector('.search-bar-container');
+        
+        window.onscroll = () =>{
+           searchbar.classList.remove('active')
+           searchbtn.classList.remove('fa-times')
+           menu.classList.remove('fa-times')
+            navbar.classList.remove('active')
+            loginform.classList.remove('active');
+            if(window.scrollY > 0){
+                document.querySelector('header').classList.add('active');
+            }else{
+                document.querySelector('header').classList.remove('active');
+            }
+            
+        }
+        
+        searchbtn.addEventListener('click', ()=>{
+            searchbtn.classList.toggle('fa-times')
+            searchbar.classList.toggle('active')
+            document.querySelector('header').classList.add('active');
+            
+        });
+        
+        
+        
+        let formbtn = document.querySelector('#login-btn');
+        let loginform = document.querySelector('.login-form-container');
+        let closeform = document.querySelector('#form-close');
+        
+        formbtn.addEventListener('click', ()=>{
+            loginform.window.location.href;
+        });
+        closeform.addEventListener('click', ()=>{
+            loginform.classList.remove('active');
+        });
+        
+        document.getElementById('login-btn').addEventListener('click',function() {
+            window.location.href='http://localhost/test-vue/public/sdfg/profilpage.php';
+        });
+        
+        
+        let menu = document.querySelector('#menu-bar');
+        let navbar = document.querySelector('.navbar');
+        
+        menu.addEventListener('click', ()=>{
+            menu.classList.toggle('fa-times')
+            navbar.classList.toggle('active')
+            document.querySelector('header').classList.add('active');
+        
+        });
+        
+        
+        let videobtn = document.querySelectorAll('.vid-btn');
+        
+        videobtn.forEach(btn =>{
+            btn.addEventListener('click',()=>{
+               document.querySelector('.controls .active').classList.remove('active')
+               btn.classList.add('active')
+               let src = btn.getAttribute('data-src');
+               document.querySelector('#video-slider').src = src;
+            })
+        })
+        
+        
+        
+        
+        
+        
+        
+        
+        </script>
+</body>
+</html>
+  

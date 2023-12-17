@@ -1,0 +1,769 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@1,500&display=swap');
+
+
+
+*{
+    font-family: 'Nunito',sons-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+*::selection{
+    background: #8FBC8F;
+    color: #fff;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x:hidden ;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+
+section{
+    padding: 2rem 9%;
+
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: #8FBC8F;
+    color: #fff;
+    padding: .8rem 3rem;
+    border: .2rem solid #8FBC8F;
+    cursor: pointer;
+    font-size: 1.7rem;
+}
+.btn:hover{
+    background: rgba(255,255,255,.2);
+    color: #8FBC8F;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+
+}
+header.active{
+    background: white;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    
+}
+header.active .logo span{
+    color: black;
+}
+header.active .navbar a{
+    color: black;
+}
+header.active .icons i{
+    color: black;
+}
+header.active #menu-bar{
+    color: black;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: #8FBC8F;
+    text-transform: uppercase;
+}
+header .logo span{
+    color: white;
+
+}
+
+header .navbar a{
+    color: #fff;
+    font-size: 2rem;
+    margin: .8rem;
+}
+header .navbar a:hover{
+    color: #8FBC8F;
+}
+header .icons i{
+    font-size: 2.5rem;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 2rem;
+}
+header .icons i:hover{
+    color: #8FBC8F;
+}
+header  #menu-bar:hover{
+    color: #8FBC8F;
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%;left: 0;right: 0;
+    padding: 1.5rem 2rem;
+    background-color:#8FBC8F;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+}
+header .search-bar-container.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%)
+}
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 1rem;
+    text-transform: none;
+    color:#333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-bar-container label{
+    color: #fff;
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+}
+header .search-bar-container label:hover{
+    color: #8FBC8F;
+}
+
+
+
+
+.login-form-container{
+    position: fixed;
+    top: -120%;left: 0;
+    z-index: 10000;
+    min-height: 100vh;
+    width: 100%;
+    background: rgba(0,0,0,.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login-form-container.active{
+    top: 0;
+}
+.login-form-container #form-close:hover{
+    color: #8FBC8F;
+}
+
+.login-form-container form{
+    margin: 2rem;
+    padding: 1.5rem 2rem;
+    border-radius: .5rem;
+    background: white;
+    width: 50rem;
+}
+.login-form-container form h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: unset;
+    text-align: center;
+    padding: 1rem 0;
+}
+.login-form-container form .box{
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.7rem;
+    color: #333;
+    margin: .6rem;
+    border: .1rem solid rgba(0,0,0,.3);
+    text-transform: none;
+}
+.login-form-container form .box:focus{
+    border-color: #8FBC8F;
+}
+
+.login-form-container form #remember{
+    margin: 2rem 0;
+}
+
+.login-form-container form label{
+    font-size: 1.5rem ;
+}
+
+.login-form-container form .btn{
+    display: block;
+    width: 100%;
+}
+
+.login-form-container form p{
+    padding: .5rem 0;
+    font-size: 1.5rem;
+    color: #666;
+}
+.login-form-container form p a{
+    color: #8FBC8F;
+}
+
+.login-form-container form p a:hover{
+    color: #333;
+    text-decoration: underline;
+}
+.login-form-container #form-close{
+    position: absolute;
+    top: 2rem; right:3rem;
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+
+#menu-bar{
+    color: #fff;
+    border: .1rem solid #fff;
+    border-radius: .5rem;
+    font-size: 3rem;
+    padding: .5rem 1.2rem;
+    cursor: pointer;
+    display: none;
+}
+
+
+.home{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    position: relative;
+    z-index: 0;
+}
+.home .content{
+    text-align: center;
+
+}
+.home .content h3{
+    font-size: 4rem;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+.home .content p{
+    font-size: 2rem;
+    color: #fff;
+    padding: .5rem 0;
+}
+.home .video-container video{
+    position: absolute;
+    top: 0;left: 0;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.home .controls{
+    padding: .8rem;
+    border-radius: 5rem;
+    background: rgba(0,0,0,.7);
+    position: relative;
+    top:18rem;
+}
+
+.home .controls .vid-btn{
+    height: 1.3rem;
+    width: 1.3rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor:pointer;
+    margin: 0 .4rem;
+    
+}
+
+.home .controls .vid-btn.active{
+    background: #8FBC8F;
+}
+.book .heading {
+    margin-bottom: 20px;
+}
+.book .heading h1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.book .heading h1 span {
+    color: #8FBC8F;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+.book .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    align-items: center;
+
+}
+.book .row .image{
+    flex: 1 1 40rem;
+}
+.book .row .image img{
+    width: 100%;
+    height: 80vh;
+    
+}
+.book .row .text{
+    flex: 1 1 40rem;
+    padding: 2rem;
+    box-shadow: 0 1rem 2rem rgba(0,0,0,.1);
+    border-radius: .5rem;
+    height: 80vh;
+}
+.book .row .text h3{
+    font-size: 3rem;
+    color: #444;
+    text-transform: unset;
+    text-align: center;
+    padding: 1rem 0;
+}
+.book .row .text p{
+    padding: .5rem 0;
+    font-size: 2rem;
+    color: #666;
+}
+.book .row .text a{
+    font-size: 2.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+ 
+.menu {
+    background-color: white; 
+    text-align: center;
+    padding: 20px;
+}
+
+.menu .titre {
+    margin-bottom: 20px;
+}
+.menu .titre  h1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.menu .titre  h1 span {
+    color: #8FBC8F;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+.menu .contenu {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.menu .contenu .box {
+    border: 2px solid #ccc;
+    padding: 0; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    border-radius: 20px;
+    align-items: center; 
+    background-color: #DCDCDC; 
+}
+.menu .contenu .box:hover {
+    background-color: rgba(255, 255, 255, .2); 
+    color: white;
+    transform: scale(1.1); 
+}
+.menu .contenu .box .image img {
+    width: 240px;
+    height: 220px;  
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.menu .contenu .box .content {
+    text-align: center;
+}
+.menu .contenu .box h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color:black;
+}
+
+
+
+.menu-B {
+    background-color: white; 
+    text-align: center;
+    padding: 20px;
+}
+.menu-B .titre-B {
+    margin-bottom: 20px;
+}
+.menu-B .titre-B  h1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.menu-B .titre-B  h1 span {
+    color: #8FBC8F;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+.menu-B .contenu-B {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+.menu-B .contenu-B .box-B{
+    border: 2px solid #ccc;
+    padding: 0; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    border-radius: 20px;
+    align-items: center; 
+    background-color: #DCDCDC; 
+}
+.menu-B .contenu-B .box-B:hover {
+    background-color: rgba(255, 255, 255, .2); 
+    color: white;
+    transform: scale(1.1); 
+}
+.menu-B .contenu-B .box-B .image-B img {
+    width: 240px;
+    height: 220px;  
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+.menu-B .contenu-B .box-B .content-B {
+    text-align: center;
+}
+.menu-B .contenu-B .box-B .content-B h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color:black;
+}
+
+
+.menu-D {
+    background-color: white; 
+    text-align: center;
+    padding: 20px;
+}
+.menu-D .titre-D {
+    margin-bottom: 20px;
+}
+.menu-D .titre-D  h1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 55px;
+    margin-bottom: 30px;
+}
+.menu-D .titre-D  h1 span {
+    color: #8FBC8F;
+    margin-left: 15px;
+    font-family: 'mv boli';
+}
+.menu-D .contenu-D {
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+}
+
+.menu-D .contenu-D .box-D {
+    border: 2px solid #ccc;
+    padding: 0; 
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    object-fit: cover;
+    border-radius: 20px;
+    align-items: center; 
+    background-color: #DCDCDC; 
+}
+.menu-D .contenu-D .box-D:hover {
+    background-color: rgba(255, 255, 255, .2); 
+    color: white;
+    transform: scale(1.1); 
+}
+.menu-D .contenu-D .box-D .image-D img {
+    width: 240px;
+    height: 220px;  
+    object-fit: cover;
+    object-position: center;
+    border-radius: 20px;
+}
+
+.menu-D .contenu-D .box-D .content-D {
+    text-align: center;
+}
+
+
+.menu-D .contenu-D .box-D .content-D h3 {
+    margin: 10px 0;
+    font-size: 18px;
+    color:black;
+}
+
+
+
+/*team*/
+.clients .team {
+    width: 100%;
+    height: 25vh;
+}
+.clients .team h1 {
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    font-size: 55px;
+   margin-bottom: -10px;
+}
+.clients .team h1 span {
+    color: #8FBC8F;
+    margin-left: 15px;
+    font-family: 'mv boli'; 
+}
+.clients .team-box {
+    width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 8%;
+}
+.clients .team-box .profile {
+    width: 320px;
+    height: 290px;
+    border-radius: 50%;
+    margin: 0 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.5);
+    transition: 0.4s;
+}
+
+.clients .team-box .profile:hover {
+    border-radius: 20px;
+    height: 320px;
+}
+
+.clients .team-box .profile img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0 0 9px rgba(0, 0, 0, 0.5);
+    z-index: 2;
+    transition: 0.4s;
+}
+
+.clients .team-box .profile:hover img {
+    border-radius: 20px;
+    margin-top: -230px;
+}
+
+.clients .team-box .profile .info {
+    position: absolute;
+    text-align: center;
+    top: 25%;
+    transition: 0.4s;
+}
+
+.clients .team-box .profile:hover .info {
+    top: 60%;
+}
+
+.clients .team-box .profile .info .name {
+    color: #2F4F4F;
+    margin-bottom: 15px;
+}
+
+.clients .team-box .profile .info .bio {
+    width: 70%;
+    text-align: center;
+    margin: 0 auto 10px auto;
+}
+
+.clients .team-box .profile .info .team-icon i {
+    margin: 10px 5px 5px 0;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.clients  .team-box .profile .info .team-icon i:hover {
+    color: #8FBC8F;
+}
+
+
+.contact{
+    background-color:#8FBC8F; ;
+    background-position: center;
+    background-attachment: fixed;
+    
+
+
+   .box-container{
+      
+       display:flex;
+       grid-templete-columns: 1fr 1fr 1fr;
+       flex-direction:row;
+       flex-wrap: wrap;
+       width: 100%;
+       justify-content: center;
+       padding-left: 10rem;
+       
+       .box{
+           align-items: center;
+           width: 25%;
+           .h3{
+           font-size: 2rem;
+           padding:1.5rem 0;
+           color: white;
+           }
+           .a{
+               display: block;
+               font-size: 1.4rem;
+               color:white;
+               #i{
+                   color: #2F4F4F;
+                   padding: .5rem;
+
+               }
+           }
+           .a:hover{
+           
+               color:#2F4F4F;
+               #i{
+                   padding-right: 2rem;
+               }
+           }
+
+           #aa:hover{
+               padding-left: 2rem;
+           }
+
+           
+       }
+   }
+   .credit{
+       text-align: center;
+       margin-top: 2.5rem;
+       padding: 1rem;
+       padding-top: 2.5rem;
+       margin-bottom: 2rem;
+       font-size: 2rem;
+       color: white;
+       .span{
+           color:#2F4F4F ;
+       }
+       
+   }
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 2rem;
+    }
+
+}
+@media (max-width:991px){
+   header{
+    padding: 2rem;
+   }
+
+}
+@media (max-width:768px){
+  #menu-bar{
+    display: inline;
+    border: none;
+  }
+  header .navbar{
+    position: absolute;
+    top: 100%;
+    right: 0;left: 0;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
+    padding: 1rem 2rem;
+    clip-path: polygon(0 0,100% 0,100% 0,0 0);
+  }
+  header .navbar.active{
+    clip-path: polygon(0 0,100% 0,100% 100%,0 100%) ;
+  }
+  header .navbar a{
+    display: block;
+    border-radius: .5rem;
+    padding: 2rem;
+    margin: 2rem;
+    background: #222;
+  }
+  header.active .navbar a{
+    color: #fff;
+  }
+  header.active .navbar a:hover{
+    color: green;
+  }
+}
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
+    .heading span{
+        font-size: 2.5rem;
+    }
+
+}
+
