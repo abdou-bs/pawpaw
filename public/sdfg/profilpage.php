@@ -108,40 +108,40 @@ while($result = mysqli_fetch_assoc($query)){
     <h1>my plan of the week</h1><br>
     <div class="box-container">
     <div class="box">
-        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day1.php">
+        <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day1.php">
          <h3 class="h3">day 1</h3>
         <div class="r1" id="r1">
             <img src="photo/OIP.jpeg" alt="" class="img">       
          </div> </a>       
      </div>
-    <div class="box"><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day2.php">
+    <div class="box"><a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day2.php">
           <h3 class="h3">day 2</h3> 
         <div class="r2" id="r2"> 
             <img src="photo/OIP.jpeg" alt="" class="img">
         </div>  </a>
      </div>
-    <div class="box"> <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day3.php">
+    <div class="box"> <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day3.php">
          <h3 class="h3">day 3</h3>
         <div class="r3" id="r3">  
             <img src="photo/OIP.jpeg" alt="" class="img">
         </div> </a>     
      </div>
     <div class="box" >  
-    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day4.php">
+    <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day4.php">
         <h3 class="h3">day 4</h3>
         <div class="r4" id="r4">    
             <img src="photo/OIP.jpeg" alt="" class="img">
         </div>   </a>
      </div>
     <div class="box">
-    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day5.php">
+    <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day5.php">
         <h3 class="h3">day 5</h3>
         <div class="r5" id="r5">
             <img src="photo/OIP.jpeg" alt="" class="img">
         </div>   </a>    
      </div>
     <div class="box">
-    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day6.php">
+    <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day6.php">
         <h3 class="h3">day 6</h3>
         <div class="r6" id="r6">
             <img src="photo/OIP.jpeg" alt="" class="img">
@@ -149,7 +149,7 @@ while($result = mysqli_fetch_assoc($query)){
         </div></a>
      </div>
     <div class="box">
-        <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/planningdays/day7.php">
+        <a href="http://localhost/test-vue/public/ptojetpaw/planningdays/day7.php">
         <h3 class="h3">day 7</h3>
         <div class="r7" id="r7">
             <img src="photo/OIP.jpeg" alt="" class="img">
@@ -161,7 +161,7 @@ while($result = mysqli_fetch_assoc($query)){
 <section class="add">
     <h1 class="heading">add a recipe </h1>
     <p>to add a recipe , click the add recipe button .</p>
-    <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/formulairederecette/index.php"><button class="btn">add recipe</button></a>
+    <a href="http://localhost/test-vue/public/ptojetpaw/formulairederecette/index.php"><button class="btn">add recipe</button></a>
 </section>
 
 <section class="favori" id="favori">
