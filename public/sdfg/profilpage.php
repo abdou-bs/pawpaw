@@ -43,11 +43,11 @@ while($result = mysqli_fetch_assoc($query)){
 
     <nav class="navbar">
         <ul>
-            <li><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#home">homme</a></li>
-            <li><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#book">service</a></li>
-            <li><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#menu">book</a></li>
-            <li><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#clients">chefs</a></li>
-            <li><a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#contact">contact</a></li>
+            <li><a href="http://localhost/test-vue/public/ptojetpaw/index.html#home">homme</a></li>
+            <li><a href="http://localhost/test-vue/public/ptojetpaw/index.html#book">service</a></li>
+            <li><a href="http://localhost/test-vue/public/ptojetpaw/index.html#menu">book</a></li>
+            <li><a href="http://localhost/test-vue/public/ptojetpaw/index.html#clients">chefs</a></li>
+            <li><a href="http://localhost/test-vue/public/ptojetpaw/index.html#contact">contact</a></li>
             
         </ul>
     </nav>
