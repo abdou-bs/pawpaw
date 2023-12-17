@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@1,500&display=swap');
+
+
+
+*{
+    font-family: 'Nunito',sons-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    transition: all .2s linear;
+}
+
+
+*::selection{
+    background: green;
+    color: white;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+html::-webkit-scrollbar{
+    width: 1.4rem ;
+}
+html::-webkit-scrollbar-track{
+    background: black;
+}
+html::-webkit-scrollbar-thumb{
+    background: green;
+}
+body{
+    background:white;
+    overflow-x: hidden;
+    padding-left: 35rem;
+}
+
+section{
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+
+
+header{
+    position: fixed;
+    top: 0;left: 0;
+    z-index: 1000;
+    height: 100%;
+    width: 35rem;
+    background:gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    text-align: center;
+}
+.user{
+    position: relative;
+}
+header .user img{
+    height: 17rem;
+    width: 17rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 1rem;
+    border: .7rem solid green;
+}
+.round{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #8FBC8F;
+    width: 30px;
+    height: 30px;
+    line-height: 33px;
+    overflow: hidden;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.round input{
+    position: absolute;
+    transform: scale(2);
+    opacity: 0;
+}
+.round input::-webkit-file-upload-button{
+    cursor: pointer;
+}
+header .user .name{
+    font-size: 3.5rem;
+    color: #fff;
+
+}
+header .user .post{
+    font-size: 2rem;
+    color: #eee;
+}
+ 
+header .navbar{
+    width: 100%;
+}
+header .navbar ul{
+   list-style: none;
+   padding: 1rem 3rem;
+}
+
+header .navbar ul li a{
+    display: block;
+    padding: .5rem;
+    margin: .5rem 0;
+    background: #333;
+    color: #fff;
+    font-size: 2rem;
+    border-radius: 5rem;
+    
+}
+header .navbar ul li a:hover{
+    background: green;
+}
+
+#menu{
+    position: fixed;
+    top: 2rem;right: 2rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    font-size: 2.5rem;
+    padding:1rem 1.5rem;
+    z-index: 1000;
+    border-radius: 1rem;
+    display: none;
+}
+
+.btn{
+    padding: .7rem 3rem;
+    background: #333;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 1rem;
+    font-size: 2rem;
+    border-radius: 5rem;
+}
+.btn:hover{
+    color:white;
+    background: green;
+}
+
+
+.about{
+    display: flex;
+    justify-content: center;
+    flex-flow:column;
+    padding: 0 15rem;
+
+}
+.about .heading{
+    border-bottom: .1rem solid black;
+}
+.about .row{
+    padding-top: 2rem;
+}
+.about .box{
+    display:flex;
+    align-items: baseline   ;
+    justify-content:flex-start;
+
+}
+.about h1{
+    font-size: 5rem;
+    color:green ;
+    text-align: center;
+}
+.about span{
+    color: black;
+}
+
+.about h3{
+    font-size: 1.5rem;
+    color:gray;
+}
+.about p{
+    font-size: 1rem;
+    color:gray ;
+    padding: 1rem 0;
+}
+
+.plan{
+    padding: 0 5rem;
+}
+.plan .box-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+padding: 2rem 0;
+}
+.plan .box-container .box{  
+height: 15rem;
+width: 15rem;
+border-radius: 1rem;
+margin: 2rem;
+overflow: hidden;
+cursor: pointer;
+
+}
+.plan .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.plan .box-container .box:hover {
+    transform: scale(1.2);
+}
+.plan h1{
+    font-size: 5rem;
+    color:green ;
+    border-bottom: .1rem solid black;
+    display: flex;
+    justify-content: center;
+   
+}
+.plan .box-container .box h3{
+    text-align: center;
+}
+.plan h3{
+    font-size: 2rem;
+
+}
+.add{
+    display: flex;
+    justify-content: center;
+    flex-flow:column;
+    padding: 0 5rem;
+    align-items: center;
+}
+.add h1{
+    font-size: 5rem;
+    color:green ;
+    display: flex;
+    justify-content: center;
+    border-bottom: .1rem solid black;
+   
+}
+.add p{
+    font-size: 2rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+.add .btn{
+    margin-top: 3rem;
+}
+
+.favori{
+    padding: 0 5rem;
+}
+.favori .box-container{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ flex-wrap: wrap;
+padding: 2rem 0;
+}
+.favori .box-container .box{  
+height: 15rem;
+width: 15rem;
+border-radius: 1rem;
+margin: 2rem;
+overflow: hidden;
+cursor: pointer;
+
+}
+.favori .box-container .box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.favori .box-container .box:hover {
+    transform: scale(1.2);
+}
+.favori h1{
+    font-size: 5rem;
+    color:green ;
+    border-bottom: .1rem solid black;
+    display: flex;
+    justify-content: center;
+   
+}
+.favori .box-container .box h3{
+    text-align: center;
+}
+.favori h3{
+    font-size: 2rem;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
+    }
+    .about{
+        padding: 1rem 4rem;
+    }
+    
+}
+
+@media (max-width:991px){
+   header{
+    left: -120%;
+   }
+   #menu{
+    display: block;
+   }
+   header.active{
+    left: 0%;
+   }
+   body{
+    padding: 0;
+   }
+}
+
+@media (max-width:760px){
+ 
+ 
+}
+@media (max-width:400px){
+   header{
+    width: 100vw;
+   }
+  html{
+    font-size: 45%;
+  }
+}
