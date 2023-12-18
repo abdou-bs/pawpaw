@@ -48,6 +48,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie = $result["categorie"];
     $res_temps = $result["temps"];
     $res_images = $result["images"];
+    $res_id = $result;
 }?>
 
 <?php
@@ -57,6 +58,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie2 = $result["categorie"];
     $res_temps2 = $result["temps"];
     $res_images2 = $result["images"];
+    $res_id2 = $result;
 
 }?>
 <?php
@@ -66,13 +68,14 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie3 = $result["categorie"];
     $res_temps3 = $result["temps"];
     $res_images3 = $result["images"];
+    $res_id3 = $result;
 
 }?>
      
      <div class="menu">
         <h2>first <span>plan</span></h2>
      <div class="box-container">
-
+     <?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id["id"] . '">' ?>
         <div class="box">
             <div class="image">
                 <?php if(!empty($res_images)) echo '<img src="../formulairederecette/image/' . $res_images . '" />' ?>
@@ -85,6 +88,8 @@ while($result = mysqli_fetch_assoc($query)){
               
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id2["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images2)) echo '<img src="../formulairederecette/image/' . $res_images2 . '" />' ?>
@@ -96,6 +101,8 @@ while($result = mysqli_fetch_assoc($query)){
                 
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id3["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images3)) echo '<img src="../formulairederecette/image/' . $res_images3 . '" />' ?>
@@ -106,7 +113,7 @@ while($result = mysqli_fetch_assoc($query)){
                 <span><?php if(!empty($res_temps3))echo $res_temps3 ?> min</span>
             
             </div>
-        </div>
+        </div>  <?php echo '</a>'?> 
     </div>
     </div>
 
@@ -120,7 +127,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie = $result["categorie"];
     $res_temps = $result["temps"];
     $res_images = $result["images"];
-
+    $res_id = $result;
 
 }?>
 
@@ -131,7 +138,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie2 = $result["categorie"];
     $res_temps2 = $result["temps"];
     $res_images2 = $result["images"];
-
+    $res_id2 = $result;
 }?>
 <?php
 $query = mysqli_query($con,"SELECT*FROM day5 WHERE  id='23' ");
@@ -140,13 +147,13 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie3 = $result["categorie"];
     $res_temps3 = $result["temps"];
     $res_images3 = $result["images"];
-
+    $res_id3 = $result;
 }?>
      
      <div class="menu">
         <h2>second <span>plan</span></h2>
      <div class="box-container">
-
+     <?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id["id"] . '">' ?>
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images)) echo '<img src="../formulairederecette/image/' . $res_images . '" />' ?>
@@ -158,6 +165,8 @@ while($result = mysqli_fetch_assoc($query)){
               
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id2["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images2)) echo '<img src="../formulairederecette/image/' . $res_images2 . '" />' ?>
@@ -169,6 +178,8 @@ while($result = mysqli_fetch_assoc($query)){
                 
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id3["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images3)) echo '<img src="../formulairederecette/image/' . $res_images3 . '" />' ?>
@@ -180,6 +191,7 @@ while($result = mysqli_fetch_assoc($query)){
             
             </div>
         </div>
+        <?php echo '</a>'?> 
     </div>
     </div>
 
@@ -193,7 +205,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie = $result["categorie"];
     $res_temps = $result["temps"];
     $res_images = $result["images"];
-
+    $res_id = $result;
 }?>
 
 <?php
@@ -203,7 +215,7 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie2 = $result["categorie"];
     $res_temps2 = $result["temps"];
     $res_images2 = $result["images"];
-
+    $res_id2 = $result;
 }?>
 <?php
 $query = mysqli_query($con,"SELECT*FROM day5 WHERE id='33' ");
@@ -212,13 +224,13 @@ while($result = mysqli_fetch_assoc($query)){
     $res_categorie3 = $result["categorie"];
     $res_temps3 = $result["temps"];
     $res_images3 = $result["images"];
-
+    $res_id3 = $result;
 }?>
      
      <div class="menu">
         <h2>third <span>plan</span></h2>
      <div class="box-container">
-
+     <?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id["id"] . '">' ?>  
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images)) echo '<img src="../formulairederecette/image/' . $res_images . '" />' ?>
@@ -230,6 +242,8 @@ while($result = mysqli_fetch_assoc($query)){
               
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id2["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images2)) echo '<img src="../formulairederecette/image/' . $res_images2 . '" />' ?>
@@ -241,6 +255,8 @@ while($result = mysqli_fetch_assoc($query)){
                 
             </div>
         </div>
+        <?php echo '</a>'?> 
+<?php   echo '<a href="../formulairederecette/recette2.php?id=' . $res_id3["id"] . '">' ?>   
         <div class="box">
             <div class="image">
             <?php if(!empty($res_images3)) echo '<img src="../formulairederecette/image/' . $res_images3 . '" />' ?>
@@ -252,6 +268,8 @@ while($result = mysqli_fetch_assoc($query)){
             
             </div>
         </div>
+        <?php echo '</a>'?> 
+  
     </div>
     </div>
 
