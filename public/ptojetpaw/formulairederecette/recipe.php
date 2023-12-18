@@ -132,7 +132,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     
    
     
-    if( $row['categorie'] == "plat principal" ){
+    if( $row['categorie'] == "plat_principal" ){
         $id = "$proposition"+1;
         $requeteInsert =mysqli_query($con, "UPDATE $section SET nom = '$nom', categorie = '$categorie', temps = '$temps', ingredients = '$ingredients', instructions = '$instruction', images = '$images' WHERE id = $id;");
     }elseif($row['categorie'] == "salade" || $row['categorie'] == "sandwitch" ){
