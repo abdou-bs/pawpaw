@@ -40,7 +40,7 @@
                  <a href='javascript:self.history.back()'><button class='btnn'>Go Back</button></div></div>";
              }else{
     
-                mysqli_query($con,"INSERT INTO users(Username,Email,Age,gender,fullname,location,language,script,imgprofil, Password) VALUES('$username','$email','$age','$gender','$fullname','$location','$language','$script','$imgprofil','$password')") or die("Erroe Occured");
+                mysqli_query($con,"INSERT INTO users(Username,Email,Age,gender,fullname,location,language,script, Password,imgprofil) VALUES('$username','$email','$age','$gender','$fullname','$location','$language','$script','$password','$imgprofil')") or die("Erroe Occured");
     
                 echo "<div class='container'><div class='boxx'> <div class='message'>
                           <p>Registration successfully!</p>

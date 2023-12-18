@@ -34,7 +34,7 @@
                     $_SESSION['language']= $row['language'];
                     $_SESSION['location']= $row['location'];
                     $_SESSION['script']= $row['script']; if(isset($_SESSION['valid'])){
-                    header("Location: ../ppaaww/ptojetpaw/index.html");
+                    header("Location: ../ptojetpaw/index.html");
                 }
 
                 }else{  

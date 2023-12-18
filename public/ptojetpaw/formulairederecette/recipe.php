@@ -43,11 +43,11 @@ if (isset($_GET['id'])) {
 
     $sql = "SELECT * FROM recette WHERE id = $id";
     $result = $con->query($sql);
-
+$row = $result->fetch_assoc();
     if ($result) {
         if ($result->num_rows > 0) {
             
-            $row = $result->fetch_assoc();
+            
 
     
             echo '<section>';
@@ -59,7 +59,7 @@ if (isset($_GET['id'])) {
             echo '<h2 id="dish-page-name">' . $row['nom'] . '</h2>';
             echo '<form action="planning.php" method="post">';
             echo '<input type="hidden" name="id" value="' . $id . '">';
-            echo '<button type="submit" class="botton">Ajouter au planning</button>'; 
+           
             echo '</form>';
             echo '<span id="dish-page-prep-time" class="time">' . $row['temps'] . ' min</span>';
             echo '<span id="dish-page-cuisine-type" class="pays">' . $row['categorie'] . '</span>';        
@@ -106,11 +106,81 @@ if (isset($_GET['id'])) {
     } else {
         echo "Erreur d'exécution de la requête : " . $con->error;
     }
-    mysqli_close($con);
+    
 } else {
     echo "Identifiant de recette manquant dans l'URL.";
 }
+
 ?>
+<?php
+
+// Fonction pour récupérer les propositions d'une section
+  $nom =  $row['nom'];
+    $categorie =  $row['categorie'];
+    $temps =  $row['temps'];
+    $ingredients =  $row['ingredients'];
+    $instruction =  $row['instructions'];
+    $images =  $row['images'];
+  
+// Traitement du formulaire
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    // Récupérer les données du formulaire
+  
+    
+    $section = $_POST["section"];
+    $proposition = $_POST["proposition"];
+    
+   
+    
+    if( $row['categorie'] == "plat principal" ){
+        $id = "$proposition"+1;
+        $requeteInsert =mysqli_query($con, "UPDATE $section SET nom = '$nom', categorie = '$categorie', temps = '$temps', ingredients = '$ingredients', instructions = '$instruction', images = '$images' WHERE id = $id;");
+    }elseif($row['categorie'] == "salade" || $row['categorie'] == "sandwitch" ){
+        $id = "$proposition"+2;
+        $requeteInsert =mysqli_query($con, "UPDATE $section SET nom = '$nom', categorie = '$categorie', temps = '$temps', ingredients = '$ingredients', instructions = '$instruction', images = '$images' WHERE id = $id;");
+    
+    }else{
+        $id = "$proposition"+3;
+        $requeteInsert =mysqli_query($con, "UPDATE $section SET nom = '$nom', categorie = '$categorie', temps = '$temps', ingredients = '$ingredients', instructions = '$instruction', images = '$images' WHERE id = $id;");
+    
+    }
+
+    // Insérer les données dans la table correspondante
+    //$requeteInsert =mysqli_query($con, "UPDATE $section SET nom = '$nom', categorie = '$categorie', temps = '$temps', ingredients = '$ingredients', instructions = '$instruction', images = '$images' WHERE id = $proposition;");
+
+
+}
+
+// Afficher les sections et propositions
+?>
+<div class="drct">
+<div class="drct1">
+    <form method="post" action="" style="margin-top: 2rem">
+        <label for="section">Choisissez une section :</label>
+        <select name="section" id="section">
+            <!-- Remplacez ces valeurs par les données réelles de votre base de données -->
+            <option value="day1plan1">day 1</option>
+            <option value="day2">day 2</option>
+            <option value="day3">day 3</option>
+            <option value="day4">day 4</option>
+            <option value="day5">day 5</option>
+            <option value="day6">day 6</option>
+            <option value="day7">day 7</option>
+            <!-- ... -->
+        </select><br><br>
+
+<label for="proposition">Choisissez une section :</label>
+        <select name="proposition" id="proposition">
+            <option value="10">plan 1</option>
+            <option value="20">plan 2</option>
+            <option value="30">plan 3</option>
+        </select><br>
+        <div style="  display: flex; align-items: center;justify-content: center;">
+         <button type="submit" class="botton" style="    padding: .4rem 1rem;border: .3rem solid  #8FBC8F;font-size: 1.6rem;border-radius: 2rem;margin-top: 0.4rem;background: #8FBC8F;color:white;">Ajouter au planning</button>
+    </div>
+    </form>
+</div>
+</div>
 <script src="recipe.js"></script>
 </body>
 </html>

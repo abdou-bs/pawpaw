@@ -172,6 +172,18 @@ padding: 2rem 9%;
     color:white;
 
 }
+ .botton{
+    display: inline-block;
+    padding: .4rem 1rem;
+    border: .3rem solid  #8FBC8F;
+    font-size: 1.6rem;
+    border-radius: 2rem;
+    margin-top: 0.4rem;
+    margin-left: 29rem;
+    background: #8FBC8F;
+    color:white;
+
+}
 
 .room1 .grd h2{
     font-size: 2rem;
@@ -210,7 +222,7 @@ padding: 2rem 9%;
 .drct .drct1 li{
     font-size: 1.2rem;
     padding: .5rem 2rem;
-    
+
 }
 
 
