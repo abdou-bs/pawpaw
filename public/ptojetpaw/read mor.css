@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&family=Poppins:ital,wght@1,500&display=swap');
 
+
+
 *{
     font-family: 'Nunito',sons-serif;
     margin: 0;
@@ -15,15 +17,16 @@
     background: #8FBC8F;
     color: #fff;
 }
+body{
+    background-color: #8FBC8F;
+}
 html{
     font-size: 62.5%;
     overflow-x:hidden ;
     scroll-padding-top: 6rem;
     scroll-behavior: smooth;
 }
-body{
-  background: #FFFAF0 ;
-}
+
 header{
     position: fixed;
     top: 0;left: 0;right: 0;
@@ -103,71 +106,54 @@ header .search-bar-container label:hover{
 }
 
 
-.plat {
-    background-color: white; 
-    text-align: center;
-    padding: 20px;
-}
-.plat .title{
-    margin-bottom: 5px;
-    width: 100%;
-    height: 25vh;
-    margin-top: 50px; 
-}
-.plat .title h2 {
-    display: flex;
-    align-items: center; 
-    justify-content: center;
-    font-size: 55px;
-    margin-bottom: 20px;
-    font-family: 'mv boli';
-    color: #2F4F4F;
-}
-.plat .contenu {
-    display: flex;
-    justify-content: space-around; 
-    align-items: center;
-    flex-wrap: wrap;
-}
-.plat .contenu .box {
-    border: 2px solid #ccc;
-    width: 210px;
-    height: 275px; 
-    padding: 0; 
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    object-fit: cover;
-    border-radius: 20px;
-    align-items: center; 
-    background-color: #DCDCDC; 
-}
-.plat .contenu .box:hover {
-    background-color: rgba(255, 255, 255, .2); 
-    color: white;
-    margin-bottom: 50px; 
-    transform: scale(1.1); 
-}
-.plat .contenu .box img {
-    width: 210px;
-    height: 210px;  
-    object-fit: cover;
-    object-position: center;
-    border-radius: 20px 20px 0 0;
-}
-.plat .contenu .box .content {
-    text-align: center;
-}
-.plat .contenu .box .content h1 {
-    margin: 10px 0;
-    font-size: 18px;
-    color:#2F4F4F;
+
+
+
+section{
+  margin-top: 10rem;
+ margin-left: 4rem;
+ margin-right: 4rem;
 }
 
-@media (max-width: 900px) {
-    header{
-        padding: 2rem;
+section h1{
+    font-size: 2.5rem;
+    color: #fff;
+    text-decoration: underline;
+    margin-top: 2rem;
+}
+section p{
+    font-size: 1.5rem;
+    margin-top: 1rem;
+    font-weight: bolder;
+}
+.id{
+    text-align: center;
+}
+li{
+    margin-top: 1rem;
+    margin-left: 2rem;
+    font-weight: bolder;
+}
+
+
+
+
+
+
+
+
+@media (max-width:1200px){
+    html{
+        font-size: 55%;
     }
+  
+
+}
+@media (max-width:991px){
+   header{
+    padding: 2rem;
+   }
+
 }
 @media (max-width:768px){
   #menu-bar{
@@ -178,8 +164,8 @@ header .search-bar-container label:hover{
     position: absolute;
     top: 100%;
     right: 0;left: 0;
-    background: #fff;
-    border-top: .1rem solid #DCDCDC;
+    background: #333;
+    border-top: .1rem solid rgba(255,255,255,.2);
     padding: 1rem 2rem;
     clip-path: polygon(0 0,100% 0,100% 0,0 0);
   }
@@ -191,12 +177,23 @@ header .search-bar-container label:hover{
     border-radius: .5rem;
     padding: 2rem;
     margin: 2rem;
-    background: #8FBC8F;
+    background: #222;
   }
   header.active .navbar a{
-    color: white;
+    color: #fff;
   }
   header.active .navbar a:hover{
-    color: #2F4F4F;
+    color: green;
   }
+}
+@media (max-width:650px){
+    html{
+        font-size: 60%;
+    }
+}
+
+@media (max-width:450px){
+    html{
+        font-size: 50%;
+    }
 }

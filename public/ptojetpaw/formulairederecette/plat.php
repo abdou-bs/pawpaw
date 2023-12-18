@@ -5,29 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="plat.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
 <header> 
 
- <div id="menu-bar" class="fas fa-bars"></div>
 
- <a href="http://localhost/test-vue/public/ppaaww/ptojetpaw/index.html#home" class="logo"><span>my</span>Recipes</a>
-  <nav class="navbar">
-  <a href="http://localhost/test-vue/public/ptojetpaw/index.html#home">home</a>
-    <a href="http://localhost/test-vue/public/ptojetpaw/index.html#book">service</a>
-    <a href="http://localhost/test-vue/public/ptojetpaw/index.html#menu">book</a>
-    <a href="http://localhost/test-vue/public/ptojetpaw/index.html#clients">chefs</a>
-    <a href="http://localhost/test-vue/public/ptojetpaw/index.html#contact">contact</a>
-    <a href="http://localhost/test-vue/public/sdfg/profilpage.php">profile</a> 
-			
-  </nav>
-  
-  <div class="icons">
-        <i class="fas fa-search" id="search-btn"></i>
-        <i class="fas fa-user" id="login-btn"></i>
-        
 
-    </div>
+<div id="menu-bar" class="fas fa-bars"></div>
+
+<a href="#" class="logo"><span>my</span>recipes</a>
+<nav class="navbar">
+<a href="http://localhost/test-vue/public/ptojetpaw/index.html#home">home</a>
+<a href="http://localhost/test-vue/public/ptojetpaw/index.html#book">service</a>
+<a href="http://localhost/test-vue/public/ptojetpaw/index.html#menu">book</a>
+<a href="http://localhost/test-vue/public/ptojetpaw/index.html#clients">chefs</a>
+<a href="http://localhost/test-vue/public/ptojetpaw/index.html#contact">contact</a>
+<a href="http://localhost/test-vue/public/sdfg/profilpage.php">profile</a> 
+    
+</nav>
+<div class="icons">
+
+<a href="http://localhost/test-vue/public/sdfg/profilpage.php"><i class="fas fa-user" id="login-btn"></i></a> 
+    
+
+</div>
+
  </header>
  <section class="plat">
 
